@@ -15,7 +15,7 @@
 }
 
 body {
-    min-height: 100vh;
+    min-height:auto;
     position: relative;
     padding-bottom: 350px;    
 }
@@ -32,19 +32,26 @@ body {
     margin: 0px 0px 0px 20px;
 }
 
+.news {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    width: 100%;
+    background-color: var(--gris2);
+    color: white;
+}
+
 .banner {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     width: 100%;
-    height: 300px;
-    background-image: url(img/Banner.jpg);
-    background-size: cover;
-    background-color: rgba(10, 10, 10, 0.3);
-    background-blend-mode: darken;
-    background-attachment: fixed;    
-    object-fit: cover;
+    height: auto;
+}
+
+.banner img{
+    width: 100%;
 }
 
 .banner h1{
@@ -80,6 +87,11 @@ footer {
     display: flex;
     flex-direction: column;
     color: white;
+}
+
+.box a{
+    color: white;
+    text-decoration: none;
 }
 
 .mapa {
@@ -232,11 +244,11 @@ footer {
 
 .Webinar img {
     width: 1000px;
-    margin: -20px 0px;
+    margin: -50px 0px;
 }
 
 .Webinar img:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition: transform 5s;
 }
 
@@ -349,6 +361,63 @@ footer {
     text-decoration: none;
 }
 
+.Lineas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-top: -60px;
+}
+
+.Lineas p{
+    font-size: 21px;
+    text-align: center;
+}
+
+.Lineas h3{
+    font-size: 19px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.Lineas h4{
+    color: rgb(42, 205, 42);
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.terminos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    height: 150px;
+    text-decoration: none;
+}
+
+.mgh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 300px;
+    gap:30px;
+}
+
+.mgh img{    
+    width: 300px;
+    box-shadow: 2px 2px 10px rgb(183, 183, 183);
+}
+
+.letrasr {
+    color: var(--rojo);
+    font-weight: bold;
+}
+
 @media only screen and (min-device-width: 850px) and (max-width: 1089px) {
     .asesor {
         width: 200px;
@@ -443,6 +512,27 @@ footer {
         gap: 60px;
         flex-direction: column;
     }
+    .mgh {
+        flex-direction: column;
+        height: auto;
+    }
+    .mgh img{
+        width: 200px;
+    }    
+    .Lineas p{
+        font-size: 15px;
+        width: 250px;
+        margin-bottom: 10px;
+    }
+    .terminos h3{
+        font-size: 16px;
+    }
+    .terminos h4{
+        font-size: 12px;
+    }    
+    .news p{
+        font-size: 12px;
+    }
 }
 
 
@@ -455,9 +545,6 @@ footer {
     .menu {
         justify-content: center;
     }    
-    .banner h1{
-        font-size: 30px;
-    }
     footer {
         width: 100%;
         position: absolute;
