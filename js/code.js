@@ -1,7 +1,7 @@
 function mostrarAlerta() {
-    alert("¡Diligenciamiento exclusivo Marketing!");
+    alert("¡Diligenciamiento exclusivo Marketing 🙈!");
 }
   
 function proximamente_alert() {
-    alert("¡Grabación próximamente disponible! ⚡🎉");
+    alert("¡Grabación próximamente disponible compañero! ⚡🎉");
 }
